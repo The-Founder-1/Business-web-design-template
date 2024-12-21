@@ -1,0 +1,594 @@
+@font-face {
+    font-family:MyFont ;
+    src: url('font/RobotoCondensed-VariableFont_wght.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: MyFont;
+}
+body{
+    width: 100%;
+    font-family: MyFont;
+    background-color: whitesmoke;
+   
+}
+#header-navbar{
+    width: 100%;
+}
+/* The NavBar Section */
+
+#header{
+    background-image: url( photos/filling\ station\ with\ car.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#header::after{
+    content: '';
+    position: absolute;
+    left:0 ;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .69);
+    z-index: -1;
+}
+
+ #header-navbar #header-navbar-for-list-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    transition: .5s ease left;
+      
+} 
+
+#header-navbar .header-navbar-logo {
+    color: orange;
+   text-align: left;
+   background-color: rgba(0, 0, 0, .4);
+   padding: 10px;
+   padding-left: 10px;
+   font-size: clamp(25px,35px,50px);
+}
+#header-navbar .header-navbar-logo span{
+    color:red;
+}
+ 
+#header-navbar-for-list-container .header-navbar-list-container{
+    width: 100%;
+    text-align: right;
+    font-size: clamp(20px,25px,40px);
+    display: flex;
+    justify-content: right;
+    margin-top: -15px;
+    padding-right: 20px;
+    list-style: none;
+
+}
+.header-navbar-list-container .header-navbar-list-item {
+margin-top: 30px;
+margin-left: 20px;
+text-align: right;
+}
+
+.header-navbar-list-container .header-navbar-list-item a{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: .3s ease color;
+   
+}
+
+.header-navbar-list-container .header-navbar-list-item:hover a{
+    color: orange;
+}
+
+
+#header-welcome-text{
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    line-height: 35px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#header-welcome-text h1{
+    font-size: clamp(35px,55px,70px);
+    font-family: MyFont;
+    letter-spacing: 1.5px;
+     margin-left: 0rem;
+    font-weight: 800;
+}
+#header-welcome-text  h2{
+    font-size: clamp(25px,30px,50px);
+    margin-left: 0rem;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#header-welcome-text a {
+    font-size: clamp(20px,25px,50px);
+    padding: 6px 50px;
+    margin-top: 20px;
+    margin-left: 1rem;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    border: 2px solid orange;
+    background-color: transparent;
+    color: orange;
+    transition: .3s ease background-color;
+    cursor: pointer;
+}
+#header-welcome-text a:hover{
+background-color: orange;
+color: black;
+}
+
+
+#our-services{
+    transition: .5s ease;
+    background-color: whitesmoke;
+    width: 100%;
+   
+}
+
+#our-services h3{
+    text-align: center;
+    font-size: clamp(25px,45px,60px);
+    padding-top: 20px;
+}
+
+.our-services-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: .2rem;
+width: 100%;
+height: fit-content;
+    padding: 10px;
+    list-style: none;
+}
+.our-services-list .our-services-list-item svg{
+    width: 70px;
+    height: 70px;
+    margin: auto 40%;
+    fill: whitesmoke;
+}
+.our-services-list .our-services-list-item {
+    margin: 20px;
+    margin-top: .1rem;
+    padding: 15px;
+    color: whitesmoke;
+    border-radius: 5px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, .4);
+}
+
+.our-services-list-item .our-services-list-item-topic{
+    font-size: clamp(25px,30px,40px);
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: .8px;
+}
+
+.our-services-list-item p{
+    font-size: clamp(20px,25px,35px);
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: myFont;
+    font-weight: 400;
+}
+
+
+#about-us-page{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    padding-bottom: 10px;
+}
+
+#about-us-page h4 {
+    text-align: center;
+    padding: 10px;
+    padding-top: 25px;
+    color: whitesmoke;
+    font-size: clamp(25px,45px,60px) ;
+}
+
+
+#about-us-page .About-us-items{
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    padding-top: 3rem;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+#about-us-page .About-us-item img{
+    width: 110%;
+    object-fit: cover;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+#about-us-page .About-us-item article{
+    width: 80%;
+    text-align: center;
+    margin-top: .9rem;
+    margin-left: 8rem;
+    color: whitesmoke;
+    letter-spacing: .5px;
+    font-size: clamp(20px,25px,40px);
+    font-family:MyFont;
+}
+
+
+#contact-page{
+    width: 100%;
+    background-color:whitesmoke;
+    padding: 15px;
+    padding-bottom: 30px;
+    
+    }
+    
+    #contact-page h4{
+        width: 100%;
+        text-align: center;
+        padding-top: 25px;
+        font-size:clamp(25px,45px,60px);
+    }
+    #contact-page #contact-page-list{
+        margin:10px 0px 15px 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        list-style: none;
+    }
+    
+    #contact-page-list .contact-page-list-item {
+        width: fit-content;
+        color: black;
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 1.2rem;
+        padding: 8px;
+        padding-bottom: 20px;
+        padding-right: 5px;
+        border-radius: 5px;
+    }
+    
+    #contact-page-list .contact-page-list-item h5{
+        margin-left: 52px;
+        margin-top: -3rem;
+        letter-spacing: .5px;
+        font-weight: 500;
+        text-align: left;
+        font-size: clamp(15px,19px,30px);
+    
+    }
+     #contact-page-list .contact-page-list-item p{
+        margin-left: 52px;
+        margin-top: 1px;
+        font-size: clamp(15px,15px,20px);
+        font-family: myFont;
+        letter-spacing: .5px;
+    } 
+    
+    #contact-page-list .contact-page-list-item svg{
+        width: 45px;
+        height: 45px;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+    
+    #contact-page-list .contact-page-list-item:nth-child(3) p{
+        font-style: italic;
+        margin-right: 0%;
+    }
+    
+.social-media-icons {
+    width: fit-content;
+    display:flex;
+    justify-content: right;
+    border-right: 2px solid black;
+    padding-right: 5rem;
+    margin-left: 21%;
+    margin-top: -2.9rem;
+    list-style: none;
+}
+.social-media-icons-header{
+    font-size:  clamp(25px,28px,45px);
+    border-top: 0px solid black;
+    width:fit-content;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-top: -4.8rem;
+    padding-top: 10px;
+}
+.social-icons{
+    margin-left: 1.5rem;
+}
+.social-icons a svg{
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    fill: black;
+}
+
+@media screen and (max-width:800px){
+    body{
+        background-color: red;
+       
+    }
+ 
+ 
+    #header-navbar-for-list-container .header-navbar-list-container{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #234343;
+        padding: 5px;
+        font-size: clamp(15%,25px,30px);
+        justify-content: space-between;
+        padding-right: 20px;
+    
+    }
+    .header-navbar-list-container .header-navbar-list-item {
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: center;
+
+    }
+    
+    .header-navbar-list-container .header-navbar-list-item a{
+        color: whitesmoke;
+        text-decoration: none;
+        transition: .3s ease color;
+       
+    }
+    
+    .header-navbar-list-container .header-navbar-list-item:hover a{
+        color: orange;
+    }
+    
+    #header-navbar .header-navbar-logo {
+       text-align: center;
+       padding: 20px;
+       font-size: clamp(30px,40px,50px);
+    }
+    #header-navbar .header-navbar-logo span{
+        color:red;
+    }
+     
+    #header-welcome-text{
+        position: absolute;
+        top: 38%;
+        width: 100%;
+        line-height: 35px;
+        color: whitesmoke;
+        text-align: center;
+    }
+    
+    #header-welcome-text h1{
+        font-size: clamp(20px,35px,70px);
+    }
+    #header-welcome-text  h2{
+        font-size: clamp(18px,20px,30px);
+        margin-top: 1px;
+    }
+    
+    #header-welcome-text a {
+        font-size: clamp(15px,18px,20px);
+        padding: 6px 70px;
+        margin-top: -20px;
+    }
+    #header-welcome-text a:hover{
+    background-color: orange;
+    color: black;
+    }
+    
+    #our-services{
+        transition: .5s ease;
+        width: 100%;
+        height: fit-content;
+       padding-bottom: 20px;
+       margin-bottom: 0px;
+    }
+    
+    #our-services h3{
+        font-size:clamp(25px,35px,40px);
+
+    }
+    
+    .our-services-list{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .our-services-list .our-services-list-item svg{
+        width: 65px;
+        height: 65px;
+        fill: whitesmoke;
+
+    }
+    .our-services-list .our-services-list-item {
+        margin: 20px;
+        margin-top: .1rem;
+        padding: 15px;
+        color: whitesmoke;
+        background-color: black;
+        box-shadow: 5px 5px 9px 3px rgba(0, 0, 0, .5);
+    }
+    
+    .our-services-list-item .our-services-list-item-topic{
+        font-size: clamp(24px,28px,30px);
+        text-align: center;
+        margin-bottom: 5px;
+        letter-spacing: .8px;
+    }
+    
+    .our-services-list-item p{
+        font-size:   clamp(15px,17px,23px);
+        letter-spacing: 1px;
+        text-align: center;
+        font-family: myFont;
+        font-weight: 400;
+    }
+    
+#about-us-page{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+#about-us-page h4 {
+    text-align: center;
+    padding: 10px;
+    padding-top: 25px;
+    color: whitesmoke;
+    font-size:clamp(25px,35px,40px);
+}
+
+
+#about-us-page .About-us-items{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    justify-content: center;
+    list-style: none;
+}
+
+#about-us-page .About-us-item img{
+    width: 85%;
+    object-fit: cover;
+    margin-top: 0rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    padding-right: 0px;
+}
+
+#about-us-page .About-us-item article{
+    width: 100%;
+    text-align: center;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    padding-bottom: 20px;
+    padding: 10px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-size: clamp(15px,22px,25px);
+    font-family:MyFont;
+}
+
+#contact-page{
+    padding-bottom: 20px;
+
+    }
+    
+    #contact-page h4{
+        font-size:clamp(25px,35px,40px);
+    }
+    #contact-page #contact-page-list{
+        margin:0px 0px 30px 0rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #contact-page-list .contact-page-list-item {
+        width: 100%;
+        color: black;
+        margin-top: 10px;
+        margin-left: 0px;
+        font-size: 1.2rem;
+        padding: 8px;
+        padding-bottom: 20px;
+        padding-right: 5px;
+        border-radius: 5px;
+    }
+    
+    #contact-page-list .contact-page-list-item h5{
+        margin-left: 52px;
+        margin-top: -3rem;
+        letter-spacing: .5px;
+        font-weight: 500;
+        text-align: left;
+        font-size: clamp(15px,20px,25px);
+    
+    }
+     #contact-page-list .contact-page-list-item p{
+        margin-left: 52px;
+        margin-top: 1px;
+        font-size: clamp(15px,18px,20px);
+        font-family: myFont;
+        letter-spacing: .5px;
+    } 
+    
+    #contact-page-list .contact-page-list-item svg{
+        width: 45px;
+        height: 45px;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+    
+    #contact-page-list .contact-page-list-item:nth-child(3) p{
+        font-style: italic;
+        margin-right: 0%;
+    }
+    
+.social-media-icons {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0%;
+    padding-bottom: 40px;
+    border-right: 0px solid black;
+    border-top: 1px solid gray;
+    padding-right: 0rem;
+}
+.social-media-icons-header{
+    font-size:  clamp(15px,25px,45px);
+    border-top: 0px solid black;
+    width:100%;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: .5rem;
+    margin-top: -1.8rem;
+   
+}
+.social-icons{
+    margin-left: 0rem;
+    margin-top: 2.5rem;
+}
+.social-icons a svg{
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    fill: black;
+}
+
+}
